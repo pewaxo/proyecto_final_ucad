@@ -1,0 +1,70 @@
+body{
+    font-family: sans-serif;
+    background: #CFD7C7;
+    color: #FFFA;
+}
+div, body{
+    box-sizing: border-box;/*Sirve para controlar el scroll*/
+}
+.flexbox{
+    display: flex;
+    flex-flow: row;
+    margin: 50px;
+}
+.box_1{
+    background: #0B2027;
+    height: 200px;
+    width: 100px;
+}
+.caja_1{
+    background: #40798C;
+    height: 200px;
+    width: 300px;
+    display: flex;
+}
+.titulo_1{
+    background: #0B2027;
+    height: 200px;
+    width: 650px;
+    display: flex;
+}
+.box_2{
+    background: #70A9A1;
+    height: 1000px;
+    width: 100px;
+}
+.caja_2{
+    background: #40798C;
+    height: 1000px;
+    width: 300px;
+    display: flex;
+}
+.titulo_2{
+    background: #70A9A1;
+    height: 1000px;
+    width: 650px;
+    display: flex;
+}
+.nombre{
+    color: #FFF;
+    margin: auto;
+    text-align: center;
+}
+.contenido{
+    padding: 30px;
+    text-align: justify;
+}
+.contacto{
+    padding: 30px;
+    text-align: justify;
+}
+.caja_imagen{
+    margin: auto;
+}
+img{
+    border-radius: 50%;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+}

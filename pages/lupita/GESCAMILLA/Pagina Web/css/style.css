@@ -1,0 +1,156 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #84f7f7;
+    --secundario: #0c7474;
+    --gris: #757575;
+
+}
+
+html {
+    font-size: 65.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+
+body {
+font-size: 16px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-image: linear-gradient(to top, #c1e4e3 0%, var(--blanco) 100% ); /*degradado para el fondo */
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--oscuro);
+}
+.titulo span {
+    font-size: 2rem;
+}
+.contenedor{
+    width: 120rem;
+    margin: 0 auto ;
+}
+
+.sombra{
+    -webkit-box-shadow: 2px 4px 15px 0px rgba(163,139,163,0.58);
+    -moz-box-shadow: 2px 4px 15px 0px rgba(163,139,163,0.58);
+    box-shadow: 2px 4px 15px 0px rgba(163,139,163,0.58);
+    background-color:  var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: .5rem;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.hero {
+    background-image: url(../imagenes/imgHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero{
+    position: absolute;
+    background-color: rgb( 0 0 0 / 20%);
+    width: 100%;
+    height: 100%;
+    /**para el titulo**/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2, 
+.contenido-hero p{
+    color: var(--blanco);
+    font-size: 2.8rem;
+    
+}
+
+
+table{
+    background-color: #bcdbdb;
+    display: flex;
+    border-radius: 1rem;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+td,th
+{
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+}
+
+
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%); /*utilizar el valor mas pequeño */
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.contenedor-campos {
+    margin-bottom: 1rem;
+}
+.contenedor-campos label{
+    color: var(--blanco);
+    font-weight:bold ;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.footer{
+    align-items: end;
+}
+
+video{
+    width: 50rem;
+}
